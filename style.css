@@ -4,8 +4,9 @@
   font-family: "Poppins";
 }
 .bgnd-img {
-  margin: 0 auto;
-  width: 1920px;
+  background-position: center;
+  width: 100%;
+  max-width: 1920px;
   height: 1000px;
   background-image: url("./Images/bgrnd-img.jpg");
   background-repeat: no-repeat;
@@ -17,6 +18,15 @@
   margin: 0 auto;
   width: 100%;
 }
+@media screen and (max-width: 380px) {
+  .bgnd-img {
+    max-width: 780px;
+    background-image: url("./Images/mob-bgrnd.jpg");
+    max-height: 406px;
+    width: 100%;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;

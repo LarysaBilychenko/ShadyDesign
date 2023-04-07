@@ -146,6 +146,7 @@
         </div>
       </div>
     </div>
+
     <!-- why choosing us block -->
     <div class="container">
       <div class="why">
@@ -281,7 +282,16 @@
           <a class="links" href="#">See more catagory</a>
         </div>
         <div class="block2">
-          <img src="./Images/visualize.jpg" alt="furniture visualization" />
+          <img
+            srcset="
+              ./Images/mob-visualize.jpg 335w,
+              ./Images/visualize.jpg     870w
+            "
+            sizes="(max-width: 375px) 335px,
+            (max-width: 1920px) 870px"
+            src="./Images/visualize.jpg"
+            alt="furniture visualization"
+          />
         </div>
       </div>
     </div>
